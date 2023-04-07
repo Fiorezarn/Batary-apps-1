@@ -24,22 +24,6 @@ class NavbarRestaurant extends HTMLElement {
         </div>
       </nav>
     `;
-    
-    const dropdown = this.querySelector('.dropdown');
-    const kanan = this.querySelector('.kanan');
-    const sisikanan = this.querySelector('.sisi-kanan');
-
-    dropdown.addEventListener('click', function() {
-      this.classList.toggle('ubah');
-      kanan.classList.toggle('ubah');
-      sisikanan.classList.toggle('ubah');
-    });
-
-    sisikanan.addEventListener('click', function() {
-      this.classList.remove('ubah');
-      kanan.classList.remove('ubah');
-      dropdown.classList.remove('ubah');
-    });
   }
 }
 
